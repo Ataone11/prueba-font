@@ -1,3 +1,4 @@
+//variables de entorno
 export const db = {
   user: process.env.DB_USER || "postgres",
   password: process.env.DB_PASSWORD || "dev4353231",

@@ -12,16 +12,19 @@ import {
 const router = Router();
 
 // create a task
-router.get('/task', prueba)
 
 router.post("/tasks", createTask);
 
+//get tasks
 router.get("/tasks", getAllTasks);
 
+//get a single tasks
 router.get("/tasks/:id", getTask);
 
+//update task
 router.put("/tasks/:id", updateTask);
 
+//deleted task
 router.delete("/tasks/:id", deleteTask);
 
 export default router;

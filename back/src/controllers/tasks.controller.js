@@ -1,17 +1,7 @@
 import { pool } from "../db.js";
 
+//controlllers
 
-export const prueba = async (req, res, next) => {
-  try {
-    const { title, description } = req.body;
-
-    const newTask = await pool.query('SELECT NOW()' );
-   console.log(newTask)
-    res.json("EXECUTED");
-  } catch (error) {
-    next(error);
-  }
-};
 export const createTask = async (req, res, next) => {
   try {
     const { title, description, userid} = req.body;
