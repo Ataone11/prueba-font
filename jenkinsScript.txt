@@ -12,6 +12,9 @@ node {
         step{
             bat 'npm install'
           }
+        step{
+            bat 'npm run dev'
+          }
         }
     
   
